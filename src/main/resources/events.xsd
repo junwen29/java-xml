@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ArrayList" type="ArrayListType"/>
+  <xs:complexType name="tagsType">
+    <xs:sequence>
+      <xs:element name="tags" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Chicago"/>
+            <xs:enumeration value="Technology"/>
+            <xs:enumeration value="USA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locationsType">
+    <xs:sequence>
+      <xs:element name="name" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Millennium Park"/>
+            <xs:enumeration value="Willis Tower"/>
+            <xs:enumeration value="Navy Pier"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="latitude" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="41.882702"/>
+            <xs:enumeration value="41.8789"/>
+            <xs:enumeration value="41.892654"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="longitude" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="-87.619392"/>
+            <xs:enumeration value="-87.6358"/>
+            <xs:enumeration value="-87.610168"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="locationsType" name="locations" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="chronologyType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="calendarType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="timestampType">
+    <xs:sequence>
+      <xs:element name="hour">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="17"/>
+            <xs:enumeration value="18"/>
+            <xs:enumeration value="19"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="minute"/>
+      <xs:element name="nano">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="206000000"/>
+            <xs:enumeration value="207000000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="second"/>
+      <xs:element type="xs:string" name="dayOfMonth"/>
+      <xs:element type="xs:string" name="dayOfWeek"/>
+      <xs:element type="xs:string" name="dayOfYear"/>
+      <xs:element type="xs:string" name="month"/>
+      <xs:element type="xs:string" name="monthValue"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="chronologyType" name="chronology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editsType">
+    <xs:sequence>
+      <xs:element name="author" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Jun Wen"/>
+            <xs:enumeration value="Hui En"/>
+            <xs:enumeration value="Papa Wen"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="timestampType" name="timestamp" minOccurs="0"/>
+      <xs:element type="editsType" name="edits" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createdTimestampType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="hour"/>
+      <xs:element type="xs:string" name="minute"/>
+      <xs:element name="nano">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="204000000"/>
+            <xs:enumeration value="207000000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="second"/>
+      <xs:element type="xs:string" name="dayOfMonth"/>
+      <xs:element type="xs:string" name="dayOfWeek"/>
+      <xs:element type="xs:string" name="dayOfYear"/>
+      <xs:element type="xs:string" name="month"/>
+      <xs:element type="xs:string" name="monthValue"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="chronologyType" name="chronology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="lastModifiedTimestampType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="hour"/>
+      <xs:element type="xs:string" name="minute"/>
+      <xs:element name="nano">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="206000000"/>
+            <xs:enumeration value="207000000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="second"/>
+      <xs:element type="xs:string" name="dayOfMonth"/>
+      <xs:element type="xs:string" name="dayOfWeek"/>
+      <xs:element type="xs:string" name="dayOfYear"/>
+      <xs:element type="xs:string" name="month"/>
+      <xs:element type="xs:string" name="monthValue"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="chronologyType" name="chronology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countryType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="tier"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fromWhenType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="hour"/>
+      <xs:element type="xs:string" name="minute"/>
+      <xs:element name="nano">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="204000000"/>
+            <xs:enumeration value="207000000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="second"/>
+      <xs:element type="xs:string" name="dayOfMonth"/>
+      <xs:element type="xs:string" name="dayOfWeek"/>
+      <xs:element type="xs:string" name="dayOfYear"/>
+      <xs:element type="xs:string" name="month"/>
+      <xs:element type="xs:string" name="monthValue"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="chronologyType" name="chronology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="toWhenType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="hour"/>
+      <xs:element type="xs:string" name="minute"/>
+      <xs:element name="nano">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="204000000"/>
+            <xs:enumeration value="207000000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="second"/>
+      <xs:element type="xs:string" name="dayOfMonth"/>
+      <xs:element type="xs:string" name="dayOfWeek"/>
+      <xs:element type="xs:string" name="dayOfYear"/>
+      <xs:element type="xs:string" name="month"/>
+      <xs:element type="xs:string" name="monthValue"/>
+      <xs:element type="xs:string" name="year"/>
+      <xs:element type="chronologyType" name="chronology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dateRangeType">
+    <xs:sequence>
+      <xs:element type="fromWhenType" name="fromWhen"/>
+      <xs:element type="toWhenType" name="toWhen"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="creator"/>
+      <xs:element type="xs:string" name="lastModifiedBy"/>
+      <xs:element type="xs:string" name="source"/>
+      <xs:element type="tagsType" name="tags"/>
+      <xs:element type="locationsType" name="locations"/>
+      <xs:element type="editsType" name="edits"/>
+      <xs:element type="createdTimestampType" name="createdTimestamp"/>
+      <xs:element type="lastModifiedTimestampType" name="lastModifiedTimestamp"/>
+      <xs:element type="countryType" name="country"/>
+      <xs:element type="dateRangeType" name="dateRange"/>
+      <xs:element type="xs:string" name="numView"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayListType">
+    <xs:sequence>
+      <xs:element type="itemType" name="item" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
