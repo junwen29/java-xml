@@ -31,9 +31,9 @@ public class EventFactory {
             event.setDescription("Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.");
 
             List<Edit> editList = new ArrayList<>();
-            Edit edit1 = new Edit("Jun Wen", LocalDateTime.now().plusHours(2));
-            Edit edit2 = new Edit("Hui En", LocalDateTime.now().plusHours(3));
-            Edit edit3 = new Edit("Papa Wen", LocalDateTime.now().plusHours(4));
+            Edit edit1 = new Edit("Albert", LocalDateTime.now().plusHours(2));
+            Edit edit2 = new Edit("Bob", LocalDateTime.now().plusHours(3));
+            Edit edit3 = new Edit("Charles", LocalDateTime.now().plusHours(4));
 
             editList.add(edit1);
             editList.add(edit2);

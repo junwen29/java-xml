@@ -7,13 +7,15 @@ import java.util.List;
 /**
  *  This is a XML container class to store tags for XML marshalling in a single Event
  */
-//@XmlRootElement(name = "tags")
 public class Tags {
 
     /**
      * element that is going to be marshaled in the xml
      */
     List<String> tags;
+
+    public Tags() {
+    }
 
     public Tags(List<String> tags) {
         this.tags = tags;

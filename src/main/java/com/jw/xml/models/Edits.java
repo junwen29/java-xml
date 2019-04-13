@@ -14,6 +14,9 @@ public class Edits {
      */
     List<Edit> edits;
 
+    public Edits() {
+    }
+
     public Edits(List<Edit> edits) {
         this.edits = edits;
     }

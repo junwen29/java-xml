@@ -11,6 +11,9 @@ public class Edit {
 
     private LocalDateTime timestamp;
 
+    public Edit() {
+    }
+
     public Edit(String author, LocalDateTime timestamp) {
         this.author = author;
         this.timestamp = timestamp;

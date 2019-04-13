@@ -1,0 +1,37 @@
+<event>
+  <country>
+    <name>string</name>
+    <tier>string</tier>
+  </country>
+  <createdTimestamp>string</createdTimestamp>
+  <creator>string</creator>
+  <dateRange>
+    <fromWhen>string</fromWhen>
+    <toWhen>string</toWhen>
+  </dateRange>
+  <description>string</description>
+  <edits>
+    <!--Zero or more repetitions:-->
+    <edit>
+      <author>Papa Wen</author>
+      <timestamp>07/04/2019 20:29:30</timestamp>
+    </edit>
+  </edits>
+  <lastModifiedBy>string</lastModifiedBy>
+  <lastModifiedTimestamp>string</lastModifiedTimestamp>
+  <locations>
+    <!--Zero or more repetitions:-->
+    <location>
+      <latitude>41.8789</latitude>
+      <longitude>-87.619392</longitude>
+      <name>Navy Pier</name>
+    </location>
+  </locations>
+  <name>string</name>
+  <numView>string</numView>
+  <source>string</source>
+  <tags>
+    <!--Zero or more repetitions:-->
+    <tag>Technology</tag>
+  </tags>
+</event>

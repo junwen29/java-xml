@@ -7,13 +7,15 @@ import java.util.List;
 /**
  *  This is a XML container class to store locations for XML marshalling in a single Event
  */
-//@XmlRootElement(name = "locations")
 public class Locations {
 
     /**
      * element that is going to be marshaled in the xml
      */
     List<Location> locations;
+
+    public Locations() {
+    }
 
     public Locations(List<Location> locations) {
         this.locations = locations;

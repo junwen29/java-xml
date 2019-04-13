@@ -11,6 +11,9 @@ public class DateRange {
 
     private LocalDateTime toWhen;
 
+    public DateRange() {
+    }
+
     public DateRange(LocalDateTime fromWhen, LocalDateTime toWhen) {
         this.fromWhen = fromWhen;
         this.toWhen = toWhen;

@@ -6,6 +6,9 @@ public class Country {
 
     private int tier; // importance of this country, lowest = highest.
 
+    public Country() {
+    }
+
     public Country(String name, int tier) {
         this.name = name;
         this.tier = tier;

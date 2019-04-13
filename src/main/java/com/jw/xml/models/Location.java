@@ -1,6 +1,9 @@
 package com.jw.xml.models;
 
+import javax.xml.bind.annotation.XmlType;
+
 // A point on a map
+@XmlType(propOrder = {"name","latitude", "longitude"})
 public class Location {
 
     private String name;
@@ -8,6 +11,9 @@ public class Location {
     private double latitude;
 
     private double longitude;
+
+    public Location() {
+    }
 
     public Location(String name, double latitude, double longitude) {
         this.name = name;

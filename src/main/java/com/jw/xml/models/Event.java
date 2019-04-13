@@ -3,11 +3,11 @@ package com.jw.xml.models;
 import com.jw.xml.adapters.LocalDateTimeAdapter;
 
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDateTime;
 
-@XmlRootElement
+@XmlType(propOrder = {"name", "creator", "createdTimestamp", "source", "dateRange", "country", "numView", "tags", "lastModifiedBy", "lastModifiedTimestamp", "description", "locations", "edits"})
 public class Event {
 
     private String name;

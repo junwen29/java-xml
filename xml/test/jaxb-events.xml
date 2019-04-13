@@ -1,55 +1,165 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<event>
-    <country>
-        <name>Singapore</name>
-        <tier>1</tier>
-    </country>
-    <createdTimestamp>07/04/2019 17:04:16</createdTimestamp>
-    <creator>System</creator>
-    <dateRange>
-        <fromWhen>09/04/2019 17:04:16</fromWhen>
-        <toWhen>12/04/2019 17:04:16</toWhen>
-    </dateRange>
-    <description>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.</description>
-    <edits>
-        <edit>
-            <author>Jun Wen</author>
-            <timestamp>07/04/2019 19:04:16</timestamp>
-        </edit>
-        <edit>
-            <author>Hui En</author>
-            <timestamp>07/04/2019 20:04:16</timestamp>
-        </edit>
-        <edit>
-            <author>Papa Wen</author>
-            <timestamp>07/04/2019 21:04:16</timestamp>
-        </edit>
-    </edits>
-    <lastModifiedBy>Papa Wen</lastModifiedBy>
-    <lastModifiedTimestamp>07/04/2019 21:04:16</lastModifiedTimestamp>
-    <locations>
-        <location>
-            <latitude>41.882702</latitude>
-            <longitude>-87.619392</longitude>
-            <name>Millennium Park</name>
-        </location>
-        <location>
-            <latitude>41.8789</latitude>
-            <longitude>-87.6358</longitude>
-            <name>Willis Tower</name>
-        </location>
-        <location>
-            <latitude>41.892654</latitude>
-            <longitude>-87.610168</longitude>
-            <name>Navy Pier</name>
-        </location>
-    </locations>
-    <name>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders.</name>
-    <numView>1000</numView>
-    <source>GDELT</source>
-    <tags>
-        <tag>Chicago</tag>
-        <tag>Technology</tag>
-        <tag>USA</tag>
-    </tags>
-</event>
+<events>
+    <event>
+        <name>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders.</name>
+        <creator>System</creator>
+        <createdTimestamp>07/04/2019 17:57:31</createdTimestamp>
+        <source>GDELT</source>
+        <dateRange>
+            <fromWhen>09/04/2019 17:57:31</fromWhen>
+            <toWhen>12/04/2019 17:57:31</toWhen>
+        </dateRange>
+        <country>
+            <name>Singapore</name>
+            <tier>1</tier>
+        </country>
+        <numView>1000</numView>
+        <tags>
+            <tag>Chicago</tag>
+            <tag>Technology</tag>
+            <tag>USA</tag>
+        </tags>
+        <lastModifiedBy>Charles</lastModifiedBy>
+        <lastModifiedTimestamp>07/04/2019 21:57:31</lastModifiedTimestamp>
+        <description>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.</description>
+        <locations>
+            <location>
+                <name>Millennium Park</name>
+                <latitude>41.882702</latitude>
+                <longitude>-87.619392</longitude>
+            </location>
+            <location>
+                <name>Willis Tower</name>
+                <latitude>41.8789</latitude>
+                <longitude>-87.6358</longitude>
+            </location>
+            <location>
+                <name>Navy Pier</name>
+                <latitude>41.892654</latitude>
+                <longitude>-87.610168</longitude>
+            </location>
+        </locations>
+        <edits>
+            <edit>
+                <author>Albert</author>
+                <timestamp>07/04/2019 19:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Bob</author>
+                <timestamp>07/04/2019 20:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Charles</author>
+                <timestamp>07/04/2019 21:57:31</timestamp>
+            </edit>
+        </edits>
+    </event>
+    <event>
+        <name>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders.</name>
+        <creator>System</creator>
+        <createdTimestamp>07/04/2019 17:57:31</createdTimestamp>
+        <source>GDELT</source>
+        <dateRange>
+            <fromWhen>09/04/2019 17:57:31</fromWhen>
+            <toWhen>12/04/2019 17:57:31</toWhen>
+        </dateRange>
+        <country>
+            <name>Singapore</name>
+            <tier>1</tier>
+        </country>
+        <numView>1000</numView>
+        <tags>
+            <tag>Chicago</tag>
+            <tag>Technology</tag>
+            <tag>USA</tag>
+        </tags>
+        <lastModifiedBy>Charles</lastModifiedBy>
+        <lastModifiedTimestamp>07/04/2019 21:57:31</lastModifiedTimestamp>
+        <description>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.</description>
+        <locations>
+            <location>
+                <name>Millennium Park</name>
+                <latitude>41.882702</latitude>
+                <longitude>-87.619392</longitude>
+            </location>
+            <location>
+                <name>Willis Tower</name>
+                <latitude>41.8789</latitude>
+                <longitude>-87.6358</longitude>
+            </location>
+            <location>
+                <name>Navy Pier</name>
+                <latitude>41.892654</latitude>
+                <longitude>-87.610168</longitude>
+            </location>
+        </locations>
+        <edits>
+            <edit>
+                <author>Albert</author>
+                <timestamp>07/04/2019 19:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Bob</author>
+                <timestamp>07/04/2019 20:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Charles</author>
+                <timestamp>07/04/2019 21:57:31</timestamp>
+            </edit>
+        </edits>
+    </event>
+    <event>
+        <name>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders.</name>
+        <creator>System</creator>
+        <createdTimestamp>07/04/2019 17:57:31</createdTimestamp>
+        <source>GDELT</source>
+        <dateRange>
+            <fromWhen>09/04/2019 17:57:31</fromWhen>
+            <toWhen>12/04/2019 17:57:31</toWhen>
+        </dateRange>
+        <country>
+            <name>Singapore</name>
+            <tier>1</tier>
+        </country>
+        <numView>1000</numView>
+        <tags>
+            <tag>Chicago</tag>
+            <tag>Technology</tag>
+            <tag>USA</tag>
+        </tags>
+        <lastModifiedBy>Charles</lastModifiedBy>
+        <lastModifiedTimestamp>07/04/2019 21:57:31</lastModifiedTimestamp>
+        <description>Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.</description>
+        <locations>
+            <location>
+                <name>Millennium Park</name>
+                <latitude>41.882702</latitude>
+                <longitude>-87.619392</longitude>
+            </location>
+            <location>
+                <name>Willis Tower</name>
+                <latitude>41.8789</latitude>
+                <longitude>-87.6358</longitude>
+            </location>
+            <location>
+                <name>Navy Pier</name>
+                <latitude>41.892654</latitude>
+                <longitude>-87.610168</longitude>
+            </location>
+        </locations>
+        <edits>
+            <edit>
+                <author>Albert</author>
+                <timestamp>07/04/2019 19:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Bob</author>
+                <timestamp>07/04/2019 20:57:31</timestamp>
+            </edit>
+            <edit>
+                <author>Charles</author>
+                <timestamp>07/04/2019 21:57:31</timestamp>
+            </edit>
+        </edits>
+    </event>
+</events>

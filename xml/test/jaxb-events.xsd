@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="event" type="eventType"/>
+  <xs:complexType name="countryType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="tier"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dateRangeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="fromWhen"/>
+      <xs:element type="xs:string" name="toWhen"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editType">
+    <xs:sequence>
+      <xs:element name="author">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Hui En"/>
+            <xs:enumeration value="Papa Wen"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="timestamp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="07/04/2019 20:29:30"/>
+            <xs:enumeration value="07/04/2019 21:29:30"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editsType">
+    <xs:sequence>
+      <xs:element type="editType" name="edit" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locationType">
+    <xs:sequence>
+      <xs:element name="latitude">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="41.882702"/>
+            <xs:enumeration value="41.8789"/>
+            <xs:enumeration value="41.892654"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="longitude">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="-87.619392"/>
+            <xs:enumeration value="-87.6358"/>
+            <xs:enumeration value="-87.610168"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Millennium Park"/>
+            <xs:enumeration value="Willis Tower"/>
+            <xs:enumeration value="Navy Pier"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locationsType">
+    <xs:sequence>
+      <xs:element type="locationType" name="location" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tagsType">
+    <xs:sequence>
+      <xs:element name="tag" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Chicago"/>
+            <xs:enumeration value="Technology"/>
+            <xs:enumeration value="USA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eventType">
+    <xs:sequence>
+      <xs:element type="countryType" name="country"/>
+      <xs:element type="xs:string" name="createdTimestamp"/>
+      <xs:element type="xs:string" name="creator"/>
+      <xs:element type="dateRangeType" name="dateRange"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="editsType" name="edits"/>
+      <xs:element type="xs:string" name="lastModifiedBy"/>
+      <xs:element type="xs:string" name="lastModifiedTimestamp"/>
+      <xs:element type="locationsType" name="locations"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="numView"/>
+      <xs:element type="xs:string" name="source"/>
+      <xs:element type="tagsType" name="tags"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
